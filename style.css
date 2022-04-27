@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    float: left;
+    top:10px;
+    position: relative;
+    background-color: black;
+    width: 150px;
+    margin: 40px;
+}
+
+article:hover {
+    box-shadow: 0px 5px 5px  yellow;
+    top: -10px;
+    transition: 0.2s linear;
+}
+
+section {
+    margin: 10px;
+}
+
+.buy {
+    position: fixed;  
+    right: 0px;  
+    bottom: 0px;
+    width: 20%;
+    background-color: #D2BA8F;
+    color: #3B0C03;
+    border: 2px solid #3B0C03;
+    padding: 5px;
+    border-radius: 5%;
+}
+
