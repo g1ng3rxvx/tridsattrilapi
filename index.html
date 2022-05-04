@@ -9,58 +9,88 @@
 
 <body>
     <header>
-        <img class="logo" src="" alt="">
-        <nav>
-            <a href="#more">Подробнее</a>
-            <a href="#catalog">Каталог</a>
-            <a href="">Наши партнёры</a>
-            <a href="#buy">Перейти к покупке</a>
-        </nav>
+        <img class="logo" src="/10-1651579414.svg" alt="">
+        <h1 class = "inheader">Тридцать три<br/>лапы</h1>
     </header>
+    <nav>
+        <a href="#more" class="navigation">Подробнее</a>
+        <a href="#catalog" class="navigation">Каталог</a>
+        <a href="" class="navigation">Наши партнёры</a>
+        <a href="#buy" class="navigation">Перейти к покупке</a>
+    </nav>
     <main>
         <h1>&#128062;Тридцать три лапы&#128062;</h1>
-        <section class="catalog" id="catalog">
+        <section class="catalog firstblock" id="catalog">
             <h2>Каталог</h2>
-            <div class=".products">
-            <article>
-                <h3>Кормаfffffffff</h3>
-                <img src="" alt="">
-            </article>
-            <article>
-                <img src="" alt="">
-            </article>
-            <article>
-                <img src="" alt="">
-            </article>
-            <article>
-                <img src="" alt="">
-            </article>
-            <article>
-                <img src="" alt="">
-            </article>
-        </div>
+            <div class="products">
+                <article class = "product">
+                    <h3>Корма</h3>
+                    <img src="" alt="">
+                </article>
+                <article class = "product">
+                    <h3>Игрушки</h3>
+                    <img src="" alt="">
+                </article>
+                <article class = "product">
+                    <h3>Специальные инструменты</h3>
+                    <img src="" alt="">
+                </article>
+                <article class = "product">
+                    <h3>Полезное</h3>
+                    <img src="" alt="">
+                </article>
+                <article class = "product">
+                    <h3>И всё, что может помочь вам и обрадовать вашего любимца</h3>
+                    <img src="" alt="">
+                </article>
+            </div>
         </section>
-        <section class="more" id=""></section>
-        <section class="buy" id="">
-            <p>Уже определились с выбором?<br/>Скорее оформляйте заказ!</p>
-        </section>
-        <aside>
+        <aside class = "youneed firstblock">
             <h3>Полезное</h3>
             <iframe width="250" height="150" src="https://www.youtube.com/embed/pXeTgZWTvbQ" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> <br/>
             <iframe width="250" height="150" src="https://www.youtube.com/embed/Q8JMHzIztkw" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <a href=""></a>
             <a href=""></a>
         </aside>
+        <section class="more" id=""></section>
+        <section class="buy" id="">
+            <p>Уже определились с выбором?<br/>Скорее оформляйте заказ!</p>
+        </section>
         <div class="socials">
             <p>Подпишись - получи промокод!</p>
             <a href=""><img src="" alt=""></a>
             <a href=""><img src="" alt=""></a>
             <a href=""><img src="" alt=""></a>
         </div>
+
+
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">Имя</label>
+              <input type="text" id="fname" name="firstname" placeholder="Ваше имя...">
+          
+              <label for="lname">Фамилия</label>
+              <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия...">
+          
+              <label for="country">Страна</label>
+              <select id="country" name="country">
+                <option value="russia">Россия</option>
+                <option value="belarus">Беларусь</option>
+                <option value="othercountry">Я из другой страны</option>
+              </select>
+          
+              <label for="subject">Ваши пожелания к заказу</label>
+              <textarea id="subject" name="subject" placeholder="Напишите что-нибудь..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
     </main>
     <footer>
 
