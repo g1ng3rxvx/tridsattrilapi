@@ -112,6 +112,10 @@ textarea {
     resize: vertical
 }
 
+.yaustala {
+    width: 400px;
+}
+
 input[type=submit] {
     background-color: rgb(76, 64, 136);
     color: white;
@@ -135,9 +139,9 @@ input[type=submit]:hover {
 }
 
 .photo {
-    max-width: 50px;
-    max-height: 50px;
-    display: inline;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -145,6 +149,7 @@ input[type=submit]:hover {
     margin: 20px;
     padding: 5px;
     position: relative;
+    display: block;
 }
 
 .otziv p {
@@ -153,11 +158,16 @@ input[type=submit]:hover {
     margin: 10px;
 }
 
+.otziv h5 {
+    font-size: 17px;
+}
+
 .textotziva {
     margin: 15px;
     border: 3px dotted #826afd;
     padding: 5px;
     border-radius: 12px;
+    position: relative;
 }
 
 .paw {
@@ -165,5 +175,50 @@ input[type=submit]:hover {
     right: 35px;
     top: 50px;
     width: 30px;
-    
 }
+
+.sidenav {
+    width: 30%;
+}
+
+#mySearch {
+    width: auto;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display:block;
+    width: auto;
+}
+
+#myMenu li a:hover {
+    background-color: #eee;
+}
+#toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+    }

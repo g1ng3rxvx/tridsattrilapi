@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+    <script type="text/javascript">
+     
+    $(function() {
+     
+    $(window).scroll(function() {
+     
+    if($(this).scrollTop() != 0) {
+     
+    $('#toTop').fadeIn();
+     
+    } else {
+     
+    $('#toTop').fadeOut();
+     
+    }
+     
+    });
+     
+    $('#toTop').click(function() {
+     
+    $('body,html').animate({scrollTop:0},800);
+     
+    });
+     
+    });
+     
+    </script>
 <head>
     <meta charset="UTF-8">
     <title>Онлайн-магазин "Тридцать три лапы"</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <img class="logo" src="/10-1651579414.svg" alt="">
-        <h1 class = "inheader">Тридцать три<br/>лапы</h1>
+        <h1 class="inheader">Тридцать три<br />лапы</h1>
     </header>
     <nav>
-        <a href="#more" class="navigation">Подробнее</a>
-        <a href="#catalog" class="navigation">Каталог</a>
+        <a href="more.html" class="navigation">Ваши отзывы</a>
+        <a href="inf.html" class="navigation">Про нас и ответы на вопросы</a>
+        <a href="catalog.html" class="navigation">Каталог</a>
         <a href="" class="navigation">Наши партнёры</a>
         <a href="#buy" class="navigation">Перейти к покупке</a>
     </nav>
     <main>
         <h1>&#128062;Тридцать три лапы&#128062;</h1>
         <section class="catalog firstblock" id="catalog">
-            <h2>Каталог</h2>
+            <h2>Что у нас есть?</h2>
             <div class="products">
-                <article class = "product">
+                <article class="product">
                     <h3>Корма</h3>
                     <img src="" alt="">
                 </article>
-                <article class = "product">
+                <article class="product">
                     <h3>Игрушки</h3>
                     <img src="" alt="">
                 </article>
-                <article class = "product">
+                <article class="product">
                     <h3>Специальные инструменты</h3>
                     <img src="" alt="">
                 </article>
-                <article class = "product">
+                <article class="product">
                     <h3>Полезное</h3>
                     <img src="" alt="">
                 </article>
-                <article class = "product">
+                <article class="product">
                     <h3>И всё, что может помочь вам и обрадовать вашего любимца</h3>
                     <img src="" alt="">
                 </article>
             </div>
         </section>
-        <aside class = "youneed firstblock">
+        <!--<aside class = "youneed firstblock">
             <h3>Полезное</h3>
             <iframe width="250" height="150" src="https://www.youtube.com/embed/pXeTgZWTvbQ" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -55,42 +83,36 @@
                 allowfullscreen></iframe>
             <a href=""></a>
             <a href=""></a>
-        </aside>
+        </aside>-->
         <section class="more" id=""></section>
         <section class="buy" id="">
-            <p>Уже определились с выбором?<br/>Скорее оформляйте заказ!</p>
+            <p>Уже определились с выбором?<br />Скорее оформляйте заказ!</p>
         </section>
-        <div class="socials">
-            <p>Подпишись - получи промокод!</p>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-        </div>
-
-
         <div class="container">
+            <h3>Оформление заказа</h3>
             <form action="action_page.php">
-          
-              <label for="fname">Имя</label>
-              <input type="text" id="fname" name="firstname" placeholder="Ваше имя...">
-          
-              <label for="lname">Фамилия</label>
-              <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия...">
-          
-              <label for="country">Страна</label>
-              <select id="country" name="country">
-                <option value="russia">Россия</option>
-                <option value="belarus">Беларусь</option>
-                <option value="othercountry">Я из другой страны</option>
-              </select>
-          
-              <label for="subject">Ваши пожелания к заказу</label>
-              <textarea id="subject" name="subject" placeholder="Напишите что-нибудь..." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
+                <div class="yaustala">
+                    <label for="fname">Имя</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ваше имя...">
+
+                    <label for="lname">Фамилия</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия...">
+
+                    <label for="country">Страна</label>
+                    <select id="country" name="country">
+                        <option value="russia">Россия</option>
+                        <option value="belarus">Беларусь</option>
+                        <optioSn value="othercountry">Я из другой страны</option>
+                    </select>
+
+                    <label for="subject">Ваши пожелания к заказу</label>
+                    <textarea iSd="subject" name="subject" placeholder="Напишите что-нибудь..."
+                        style="height:200px"></textarea>
+                    <input type="submit" value="Далее...">
+                </div>
             </form>
-          </div>
+        </div>
+        <DIV ID = "toTop" > Наверх </DIV >
     </main>
     <footer>
 
