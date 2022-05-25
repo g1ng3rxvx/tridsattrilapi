@@ -15,6 +15,10 @@ header {
     background-color: #7CACF8;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 h1,
 h2, summary {
@@ -43,7 +47,7 @@ h2, summary {
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #9581F9;
 }
 
@@ -73,6 +77,7 @@ nav {
     color: #3E2AA2;
     text-align: center;
     padding: 5px;
+    border-radius: 2px;
 }
 
 .product h3 {
@@ -83,10 +88,6 @@ article:hover {
     box-shadow: 5px 5px 1px 2px #6C27A2;
     top: -10px;
     transition: 0.2s linear;
-}
-
-.firstblock {
-    width: 100%;
 }
 
 
@@ -141,7 +142,21 @@ input[type=submit]:hover {
     color: #2857A1;
 }
 
+article a{
+    color: white;
+    background-color: #3E2AA2;
+    padding: 5px;
+    display: block;
+    border-radius: 2px;
+}
 
+article a::after{
+    content: "▶";
+}
+
+article a:hover {
+    background-color: #201653;
+}
 
 .q1, .q2, .q3, .q4 {
     border: 4px  dashed #2857A1;
