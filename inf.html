@@ -1,6 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
+    <script type="text/javascript">
+    
+        $(function () {
+    
+            $(window).scroll(function () {
+    
+                if ($(this).scrollTop() != 0) {
+    
+                    $('#toTop').fadeIn();
+    
+                } else {
+    
+                    $('#toTop').fadeOut();
+    
+                }
+    
+            });
+    
+            $('#toTop').click(function () {
+    
+                $('body,html').animate({ scrollTop: 0 }, 800);
+    
+            });
+    
+        });
+    
+    </script>
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +40,7 @@
 
 <body>
     <header>
-        <img class="logo" src="/10-1651579414.svg" alt="">
+        <a href="index.html"><img class="logo" src="https://drive.google.com/uc?export=view&id=1hBQk7umUqHphIti0H6hW8f0MI8Zc_W12" alt="Тридцать три лапы логотип"></a>
         <h1 class="inheader">Тридцать три лапы</h1>
     </header>
     <nav>
@@ -19,29 +48,42 @@
         <a href="inf.html" class="navigation">Про нас и ответы на вопросы</a>
         <a href="catalog.html" class="navigation">Каталог</a>
         <a href="" class="navigation">Наши партнёры</a>
-        <a href="#buy" class="navigation">Перейти к покупке</a>
+        <a href="index.html#buy" class="navigation">Перейти к покупке</a>
     </nav>
     <main>
         <h2>Ваши вопросы и наши ответы!</h2>
         <section class="asks">
-            
-            <details class="q1">екекекекек
+            <details class="q1">Достаточно
                 <summary>Насколько ваша продукция безопасна?</summary></details>
-            <details class="q2">
-                <summary>Оправдана ли цена?</summary>
+            <details class="q2">Да, у нас только проверенные доставщики из всех уголков мира. Мы тщательно отбираем товар перед началом массовой продажи, так что не нужно волноваться о качестве и цене - наша продукция всегда оправдывает свою цену.
+                <summary>Цена соответствует качеству?</summary>
             </details>
-            <details class="q3">
+            <details class="q3">Конечно! В течении 7 рабочих дней после покупки при обнаружении брака, несоответсвия упаковке и/или заявленным на упаковке качествам, чётко следуя <span class="porjadokvozvrata vozvrat"><a href="#2">порядку возврата товара</a></span>. Но мы стараемся, чтобы вам не приходилось возвращать товар.<br/>
+                <span class="icklvozvrt vozvrat"><a href="#1">Список товаров, ненадлежащих к возврату</a></span>    
                 <summary>Можно оформить возврат?</summary>
             </details>
-            <details class="q4">
-                <summary>А если продукт будет ненадлежащего качества?</summary>
+            <details class="q4">В таком случае, мы будем готовы сделать вам скидку на этот товар. Но цену ниже нашей будет достаточно трудно найти.
+                <summary>А если я найду магазин с ценой ниже вашей?</summary>
             </details>
         </section>
         <section class="canask">
             <h3>Остались вопросы? Пишите нам!</h3>
-            <h2></h2>
+            <p class="asking">Отправляйте свои вопросы по адресу: vopors@33paws.ru</p>
+            <p class="asking">Или звоните на нашу горячую линию: (343) 678-34-34</p>
         </section>
+        <section class="buy" id="">
+            <p>Уже определились с выбором?<br />Скорее <a class="tobuy" href="index.html#buy">оформляйте заказ!</a></p>
+        </section>
+        <DIV ID="toTop"><img src="https://drive.google.com/uc?export=view&id=1i12437Ez8PERDYbXQtfldNjAKJUQgKmi" alt=""></DIV>
     </main>
+    <footer>
+        <div class="contacts">
+            <ul><h4>Контакты</h4>
+        <li><p>ОАО "Животный мир": all@animalworld.ru</p></li>
+        <li><p>"Тридцать три лапы": all@33paws.ru</p></li>
+        <li><p>Руководство по доставке: all@33paws_delivery.ru</p></li>
+        <li><p>Отдел качества: all@33paws_kachestvo.ru</p></li>
+    </ul>
+    </div> 
+    </footer>
 </body>
-
-</html>

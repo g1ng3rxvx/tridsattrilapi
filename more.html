@@ -1,5 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() != 0) {
+
+                $('#toTop').fadeIn();
+
+            } else {
+
+                $('#toTop').fadeOut();
+
+            }
+
+        });
+
+        $('#toTop').click(function () {
+
+            $('body,html').animate({ scrollTop: 0 }, 800);
+
+        });
+
+    });
+
+</script>
 
 <head>
     <meta charset="UTF-8">
@@ -11,52 +40,79 @@
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="/10-1651579414.svg" alt=""></a>
+        <a href="index.html"><img class="logo"
+                src="https://drive.google.com/uc?export=view&id=1hBQk7umUqHphIti0H6hW8f0MI8Zc_W12"
+                alt="Тридцать три лапы логотип"></a>
         <h1 class="inheader">Тридцать три<br />лапы</h1>
     </header>
     <nav>
-        <a href="#more" class="navigation">Подробнее</a>
-        <a href="#catalog" class="navigation">Каталог</a>
+        <a href="more.html" class="navigation">Ваши отзывы</a>
+        <a href="inf.html" class="navigation">Про нас и ответы на вопросы</a>
+        <a href="catalog.html" class="navigation">Каталог</a>
         <a href="" class="navigation">Наши партнёры</a>
-        <a href="#buy" class="navigation">Перейти к покупке</a>
+        <a href="index.html#buy" class="navigation">Перейти к покупке</a>
     </nav>
     <main>
         <section class="bio">
             <h2>Наша история</h2>
             <p></p>
         </section>
-        <section class="dostizheniya">
+        <section class="achievements">
             <h2>Наши достижения</h2>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+            <a class="achievement" href=""><img class="achievement"
+                    src="https://drive.google.com/uc?export=view&id=1B-y_exQvwHAOLsXd9F2FL8Gfx_ZG3vVz" alt=""></a>
+            <a class="achievement" href=""><img class="achievement" src="" alt=""></a>
+            <a class="achievement" href=""><img class="achievement" src="" alt=""></a>
+            <a class="achievement" href=""><img class="achievement" src="" alt=""></a>
+            <a class="achievement" href=""><img class="achievement" src="" alt=""></a>
         </section>
         <section class="otzivi">
             <h2>Отзыывы наших клиентов и их любимцев</h2>
             <div class="otziv">
                 <h5>Светлана и Барсик</h5>
-                <p><img class="photo" src="/image (1).jpg" alt=""><span class="textotziva">fdddrddddrrerwgausdg<br/>vjhzbvzjxhkgcjxvgzsuydgfesfzjhgddgfugdsfjxcbvjhcxghf<br/>zjdfgv</span></p>
-                <img class="paw" src="/paw-print.png" alt="">
+                <p><img class="photo" src="https://drive.google.com/uc?export=view&id=1btRmN6P5YPfcYruxuANZykQi4nm84Mp7"
+                        alt="Фото Светланы"><span
+                        class="textotziva">fdddrddddrrerwgausdg<br />vjhzbvzjxhkgcjxvgzsuydgfesfzjhgddgfugdsfjxcbvjhcxghf<br />zjdfgv</span>
+                </p>
             </div>
             <div class="otziv">
                 <h5>Иван и Коко</h5>
-                <p><img class="photo" src="/image.jpg" alt=""><span class="textotziva">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></p>
+                <p><img class="photo" src="https://drive.google.com/uc?export=view&id=1qm2S3sgecV1nrijIh-NF-mDjCZU7ywhj"
+                        alt="Фото Ивана"><span class="textotziva">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></p>
             </div>
             <div class="otziv">
                 <h5>Алексей и Гена</h5>
-                <p><img class="photo" src="/image (2).jpg" alt=""><span class="textotziva">Доброго времени суток!<br/><br/>Хотелось бы поделиться своим мнением об этом чудесном магазине! У моего пса есть некоторые особенности, из-за которых у него серьёзное ограничения касательно корма. Необходимый ес</span><img class="paw" src="/paw-print.png" alt=""></p>
-            
-            </div class="otziv">
-            <div class="otziv">
-                <img class="photo" src="" alt="">
-                <h5></h5>
+                <p><img class="photo" src="https://drive.google.com/uc?export=view&id=16_DTQQO3vhamkek_CoFUykWriWp0kPZQ"
+                        alt="Фото Алексея"><span class="textotziva">Доброго времени суток!<br /><br />Хотелось бы
+                        поделиться своим мнением об этом чудесном магазине! У моего пса есть некоторые особенности,
+                        из-за которых у него серьёзное ограничения касательно корма. Необходимый ес</span></p>
 
-                <p></p>
             </div>
         </section>
+        <section class="buy" id="">
+            <p>Уже определились с выбором?<br />Скорее <a class="tobuy" class="tobuy" href="index.html#buy">оформляйте заказ!</a></p>
+        </section>
+        <DIV ID="toTop"><img src="https://drive.google.com/uc?export=view&id=1i12437Ez8PERDYbXQtfldNjAKJUQgKmi" alt=""></DIV>
     </main>
+    <footer>
+        <div class="contacts">
+            <ul>
+                <h4>Контакты</h4>
+                <li>
+                    <p>ОАО "Животный мир": all@animalworld.ru</p>
+                </li>
+                <li>
+                    <p>"Тридцать три лапы": all@33paws.ru</p>
+                </li>
+                <li>
+                    <p>Руководство по доставке: all@33paws_delivery.ru</p>
+                </li>
+                <li>
+                    <p>Отдел качества: all@33paws_kachestvo.ru</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
