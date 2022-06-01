@@ -2,14 +2,18 @@
 
 
 body {
-    font-family: sans-serif;
+    font-family: 'Caveat', cursive;
+}
+
+header, main, section {
+    width:100%;
 }
 
 a {
     text-decoration: none;
 }
 
-body{
+*{
     margin: 0px;
 }
 
@@ -17,17 +21,31 @@ header {
     background-color: #7CACF8;
 }
 
-h2 {
-    margin-top: 10px;
-}
 
 
-h1, h2, h3, summary, .asking {
+h1, h2, h3, summary, .asking, label, .categories__title-link {
     font-family: 'Caveat', cursive;
     text-align: center;
     color: #24A18C;
+    font-weight: lighter;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+label {
+    font-size: 25px;
+}
 .logo {
     position: relative;
     bottom: 0px;
@@ -43,6 +61,7 @@ h1, h2, h3, summary, .asking {
     font-size: 45px;
     color: #2857A1;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 
 nav {
@@ -50,6 +69,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #9581F9;
+    font-size: 20px;
 }
 
 .navigation {
@@ -83,6 +103,7 @@ nav {
 
 .product h3 {
     font-size: 20px;
+    color:#3E2AA2;
 }
 
 .product a {
@@ -93,6 +114,10 @@ nav {
     border-radius: 5px;
     display: block;
     bottom: 0px;
+}
+
+.product a:hover {
+    background-color: #5546a1;
 }
 
 article:hover {
@@ -116,8 +141,13 @@ article:hover {
     color: #2857A1;
     border: 2px solid #2857A1;
     padding: 5px;
-    border-radius: 5%;
+    border-radius: 8px;
     text-align: center;
+    font-size: 18px;
+}
+
+.tobuy:visited {
+    color: black;
 }
 
 input[type=text],
@@ -185,52 +215,34 @@ summary, details{
     padding: 5px;
 }
 
-.achievements {
-    margin: 10px;
+.bio {
+    padding: 15px;
+    font-size: 25px;
 }
 
-.achievement {
-    width:70px;
-    margin:10px;
-}
-
-.achievement:hover {
-    transform: scale(1.5);
-    margin: 14px;
-    box-shadow: 5px 5px 5px 0 #2857A1;
-    transition: 0.5s linear;
-}
 
 .photo {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin: 5px;
 }
 
 .otziv {
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
     padding: 5px;
-    position: relative;
-    display: block;
 }
 
-.otziv p {
+.otziv {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin: 10px;
-}
-
-.otziv h5 {
-    font-size: 17px;
-}
-
-.textotziva {
     margin: 15px;
     border: 3px dotted #826afd;
     padding: 5px;
     border-radius: 12px;
-    position: relative;
+    font-size: 20px;
 }
 
 .paw {
@@ -240,53 +252,39 @@ summary, details{
     width: 30px;
 }
 
-.catalog {
+.categories-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.navinside {
-    display: flex;
     justify-content: center;
-    background-color: #94FBEA;
 }
 
-.forbestsellers, .forsales {
-    padding: 25px;
-    color: black;
+.item {
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #2857A1;
+    border-radius: 8px;
+    position: relative;
 }
 
-.forbestsellers:hover, .forsales:hover {
-    background-color: #24A18C;
+.item:hover{
+    box-shadow: 5px 5px 1px 2px #6C27A2, 10px 10px 1px 2px #9DC2FB;
+    top: -10px;
+    transition: 0.2s linear;
+}
+
+.buying {
+    display: block;
+    text-align: center;
+    background-color: #3E2AA2;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
     color: white;
 }
 
-.forbestsellers:visited::after, .forsales:visited::after {
-    content: "🐾" ;
-}
-
-.navinside select {
-    width: 100px;
-    margin: 10px;
-}
-
-select option {
-    text-align: center;
-}
-
-.bestsellers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
-}
-
-.bestseller_product {
-    width: 170px;
-}
-
-.bestsellerproducr_picture {
-    width: 150px;
+.categories__title-link {
+    font-size:20px;
+    color:#24A18C;
 }
 
 #toTop {
@@ -321,6 +319,9 @@ footer {
     margin-top: 10px;
 }
 
+ul {
+    list-style: none;
+}
 
 .contacts {
     display: flex;
@@ -331,4 +332,14 @@ footer {
     text-align: center;
 }
 
+
+.acontacts {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.acontacts img {
+    width: 60px;
+}
 
